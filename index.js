@@ -10,7 +10,7 @@ app.get("/",(req,res)=>{
   res.send("Hi there")
 })
 
-app.post("/bfhl", (req, res) => {
+app.post("/api/bfhl", (req, res) => {
   const arr = req.body.data;
   for (let i of arr) {
     if ((i >= "A" && i <= "Z") || (i >= "a" && i <= "z")) {
