@@ -6,6 +6,10 @@ let odd_number = [];
 let even_number = [];
 let alphabets = [];
 
+app.get("/",(req,res)=>{
+  res.send("Hi there")
+})
+
 app.post("/bfhl", (req, res) => {
   const arr = req.body.data;
   for (let i of arr) {
